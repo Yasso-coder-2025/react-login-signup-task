@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+:root{
+    --mainColor: #D9176C;
+    --footer-bg: #3B2F4A;
+    --black-text: #222222;
+}
