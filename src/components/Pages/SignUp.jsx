@@ -1,8 +1,6 @@
 import { ErrorMessage, Field, Form, Formik } from 'formik'
 import React, { use } from 'react'
 import { facebookIcon, googleIcon } from '../../assets/icon/icons'
-import Header from '../Header/Footer/Header'
-import Footer from '../Header/Footer/Footer'
 import { Link } from 'react-router'
 import * as Yup from 'yup'
 import axios from 'axios'
@@ -37,7 +35,6 @@ const SignUp = () => {
 
   return (
     <>
-    <Header/>
     <div className="flex flex-col justify-center items-center gap-10 mt-15">
         <Formik initialValues={{first_name: "", last_name: "", email: "", password: "", confirm_password: "" }} validationSchema={SignUpSchema} onSubmit={ (values) =>{handleSignUp(values)}}>
             <Form className='w-xl'>
@@ -100,7 +97,6 @@ const SignUp = () => {
             </Form>
         </Formik>
     </div>
-    <Footer/>
     </>
   )
 }

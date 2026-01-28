@@ -1,6 +1,6 @@
 import React from 'react'
-import { bookIcon, earthIcon, facebookSocialIcon, instagramSocialIcon, TwitterSocialIcon, YoutubeSocialIcon,} from '../../../assets/icon/icons'
 import { Link } from 'react-router'
+import { bookIcon, earthIcon, facebookSocialIcon, instagramSocialIcon, TwitterSocialIcon, YoutubeSocialIcon } from '../../assets/icon/icons'
 
 const Footer = () => {
   return (
@@ -12,12 +12,12 @@ const Footer = () => {
                     <div className="w-7 h-8 pr-2">
                       <img className="w-full h-full" src={bookIcon} alt="bookIcon" />
                     </div>
-                    <Link to={'/'} className="text-white">Bookshop</Link>
+                    <Link to={"/"} className="text-white">Bookshop</Link>
             </div>
             <ul className="flex justify-center items-center pl-6 text-white gap-10">
-                    <li className="cursor-pointer">Home</li>
-                    <li className="cursor-pointer">Books</li>
-                    <li className="cursor-pointer">About us</li>
+                    <Link to={"/"} className="cursor-pointer">Home</Link>
+                    <Link to={"/Books"} className="cursor-pointer">Books</Link>
+                    <Link to={"/AboutUs"} className="cursor-pointer">About us</Link>
             </ul>
           </div>
           <div className="social-icons flex gap-6">
