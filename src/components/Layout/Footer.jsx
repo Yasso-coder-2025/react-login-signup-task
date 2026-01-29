@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { bookIcon, earthIcon, facebookSocialIcon, instagramSocialIcon, TwitterSocialIcon, YoutubeSocialIcon } from '../../assets/icon/icons'
+import Button from '../../common/Button'
 
 const Footer = () => {
   return (

@@ -1,9 +1,10 @@
 import React from 'react'
 
-const button = () => {
+const Button = () => {
   return (
-    <button className='px-4 py-2.75 bg-(--mainColor) text-white rounded-lg hover:bg-white '>Log in</button>
+    <button  type="submit"  className='px-4 py-2.5 bg-(--mainColor) text-white rounded-lg cursor-pointer border border-(--mainColor) hover:bg-white hover:text-(--mainColor)  duration-300'></button>
+
   )
 }
 
-export default button
+export default Button

@@ -105,7 +105,7 @@ const Login = () => {
                             <Field  type='checkbox' name='checkbox'/>
                             <label htmlFor="checkbox" className='font-normal text-[14px]'>Remember me</label>
                         </div>
-                        <a className="text-[18px] font-normal text-(--mainColor) cursor-pointer"> Forget password?</a>
+                        <Link to={'/ForgetPassword'} className="text-[18px] font-normal text-(--mainColor) cursor-pointer"> Forget password?</Link>
                     </div>
                         <button type="submit" className="mt-4 px-4 py-2.5 bg-(--mainColor) text-white rounded-lg cursor-pointer border border-(--mainColor) hover:bg-white hover:text-(--mainColor)  duration-300">
                         Log in

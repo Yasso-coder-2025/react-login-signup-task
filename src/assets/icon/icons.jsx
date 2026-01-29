@@ -6,6 +6,6 @@ import instagramSocialIcon from './InstgramSocial.svg'
 import YoutubeSocialIcon from './YoutubeSocial.svg'
 import TwitterSocialIcon from './TwitterSocial.svg'
 import earthIcon  from './earthIcon.svg'
+import checkIcon from './check-circle.svg'
 
-
-export { bookIcon , googleIcon , facebookIcon ,facebookSocialIcon , instagramSocialIcon ,YoutubeSocialIcon, TwitterSocialIcon, earthIcon}
+export { bookIcon , googleIcon , facebookIcon ,facebookSocialIcon , instagramSocialIcon ,YoutubeSocialIcon, TwitterSocialIcon, earthIcon , checkIcon}

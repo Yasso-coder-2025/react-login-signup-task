@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import { bookIcon } from "../../assets/icon/icons";
 import { headerImage} from "../../assets/images/images";
+import Button from "../../common/Button";
 
 const Navbar = () => {
   return (
