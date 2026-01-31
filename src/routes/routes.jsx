@@ -7,6 +7,7 @@ import Books from "../components/Pages/Books";
 import AboutUs from "../components/Pages/AboutUs";
 import ForgetPassword from "../components/Pages/ForgetPassword";
 import ResetPassword from "../components/Pages/ResetPassword";
+import AddCode from "../components/Pages/AddCode";
 // import PasswordChangedSucceful from "../common/PasswordChangedSucceful";
 
 const routes = createBrowserRouter([
@@ -46,6 +47,10 @@ const routes = createBrowserRouter([
       {
         path: "/ResetPassword",
         element: <ResetPassword />,
+      },
+      {
+        path: "/AddCode",
+        element: <AddCode/>,
       },
 
     ],
