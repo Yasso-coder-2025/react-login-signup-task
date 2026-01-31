@@ -1,4 +1,4 @@
-import bookIcon from './book-bookmark.svg'
+// import bookIcon from './book-bookmark.svg'
 import googleIcon from './google-icon.svg'
 import facebookIcon from './facebook-icon.svg'
 import facebookSocialIcon from './FacebookSocial.svg'
@@ -8,4 +8,7 @@ import TwitterSocialIcon from './TwitterSocial.svg'
 import earthIcon  from './earthIcon.svg'
 import checkIcon from './check-circle.svg'
 
-export { bookIcon , googleIcon , facebookIcon ,facebookSocialIcon , instagramSocialIcon ,YoutubeSocialIcon, TwitterSocialIcon, earthIcon , checkIcon}
+
+// export {bookIcon}
+
+export { googleIcon , facebookIcon ,facebookSocialIcon , instagramSocialIcon ,YoutubeSocialIcon, TwitterSocialIcon, earthIcon , checkIcon}

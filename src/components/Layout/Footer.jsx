@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router'
-import { bookIcon, earthIcon, facebookSocialIcon, instagramSocialIcon, TwitterSocialIcon, YoutubeSocialIcon } from '../../assets/icon/icons'
-import Button from '../../common/Button'
+import { earthIcon, facebookSocialIcon, instagramSocialIcon, TwitterSocialIcon, YoutubeSocialIcon } from '../../assets/icon/icons'
+// import Button from '../../common/Button'
+import { LogoImage } from '../../assets/images/images'
 
 const Footer = () => {
   return (
@@ -9,11 +10,10 @@ const Footer = () => {
       <div className="bg-(--footer-bg) pt-30 pb-40  px-15 mt-111.5">
         <div className="flex justify-between pb-5 border-b border-b-white/20">
           <div className="flex">
-            <div className="flex items-center pe-6 border-r border-r-white/30">
-                    <div className="w-7 h-8 pr-2">
-                      <img className="w-full h-full" src={bookIcon} alt="bookIcon" />
-                    </div>
-                    <Link to={"/"} className="text-white">Bookshop</Link>
+            <div className="flex items-center pe-4">
+              <Link to={"/"}>
+                <img className="w-full h-full" src={LogoImage} alt="bookIcon" />
+              </Link>
             </div>
             <ul className="flex justify-center items-center pl-6 text-white gap-10">
                     <Link to={"/"} className="cursor-pointer">Home</Link>
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-4 flex justify-between">
-          <p className='text-white text-[14px]'>
+          <p className='text-white text-[14px] font-normal'>
             &lt;Developed By&gt; EraaSoft &lt;All Copy Rights Reserved @2024
           </p>
           <div className="flex gap-4">

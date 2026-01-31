@@ -5,6 +5,7 @@ import { Link } from 'react-router'
 import * as Yup from 'yup'
 import axios from 'axios'
 import { useNavigate } from 'react-router'
+import Button from '../../common/Button'
 
 
 
@@ -72,27 +73,27 @@ const SignUp = () => {
                         <Field type='checkbox' name='checkbox'/>
                         <label htmlFor="checkbox" className='font-normal text-[14px] pl-2'>Agree with <a className='text-(--mainColor) cursor-pointer'>Terms & Conditions</a></label>
                     </div>
-                        <button type="submit" className="mt-4 px-4 py-2.5 bg-(--mainColor) text-white rounded-lg cursor-pointer border border-(--mainColor) hover:bg-white hover:text-(--mainColor)  duration-300">
+                    <Button className="text-white hover:bg-white hover:text-(--mainColor)  duration-300">
                         Sign Up
-                        </button>
+                    </Button>
                 </div>
                 <div className="mt-10 ">
-                    <p className='text-center text-[16px] font-normal'>Already have an account? <Link to={'/'} className='text-(--mainColor) cursor-pointer'>Login</Link></p>
+                    <p className='text-center text-[16px] font-normal'>Already have an account? <Link to={'/Login'} className='text-(--mainColor) cursor-pointer'>Login</Link></p>
                 </div>
                 <div className="mt-10 text-[14px] font-normal text-center text-black/50">or</div>
                 <div className="mt-6 flex flex-col gap-3">
-                    <button className="w-full px-4 py-2.5 bg-white text-black rounded-lg cursor-pointer flex justify-center items-center gap-2.5 shadow">
+                    <Button className="bg-white text-black shadow flex justify-center items-center gap-2.5 border-0">
                         <div className="w-5 h-5">
                             <img src={googleIcon} alt="google-icon" className='w-full h-full' />
                         </div>
                         Login with Google
-                    </button>
-                    <button className="w-full px-4 py-2.5 bg-white text-black rounded-lg cursor-pointer flex justify-center items-center gap-2.5 shadow">
+                    </Button>
+                    <Button className="bg-white text-black shadow flex justify-center items-center gap-2.5 border-0">
                         <div className="w-5 h-5">
                             <img src={facebookIcon} alt="google-icon" className='w-full h-full' />
                         </div>
                         Login with Facebook
-                    </button>
+                    </Button>    
                 </div>
             </Form>
         </Formik>

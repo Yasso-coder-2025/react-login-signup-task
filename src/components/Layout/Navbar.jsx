@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
-import { bookIcon } from "../../assets/icon/icons";
-import { headerImage} from "../../assets/images/images";
+// import { bookIcon } from "../../assets/icon/icons";
+import { headerImage, LogoImage} from "../../assets/images/images";
 import Button from "../../common/Button";
 
 const Navbar = () => {
@@ -11,10 +11,9 @@ const Navbar = () => {
       <nav className="px-35 py-5 bg-white/20 flex justify-between">
         <div className="flex">
           <div className="flex items-center pe-6 border-r border-r-white/30">
-            <div className="w-7 h-8 pr-2">
-              <img className="w-full h-full" src={bookIcon} alt="bookIcon" />
-            </div>
-            <Link to={"/"} className="text-white">Bookshop</Link>
+            <Link to={"/"}>
+              <img className="w-full h-full" src={LogoImage} alt="bookIcon" />
+            </Link>
           </div>
           <ul className="flex justify-center items-center pl-6 text-white gap-10">
             <Link to={"/"} className="cursor-pointer">Home</Link>
@@ -23,11 +22,15 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="buttons flex gap-5.75">
-          <Link to={"/Login"} className="px-4 py-2.5 bg-(--mainColor) text-white rounded-lg cursor-pointer border border-(--mainColor) hover:bg-white hover:text-(--mainColor)  duration-300">
+          <Link to={"/Login"}>
+           <Button className="text-white hover:bg-white hover:text-(--mainColor)  duration-300">
             Log in
+           </Button>
           </Link>
-          <Link to={"/SignUp"} className="px-4 py-2.5 bg-white text-(--mainColor) rounded-lg cursor-pointer border border-(--mainColor) hover:bg-(--mainColor) hover:text-white  duration-300">
+          <Link to={"/SignUp"}>
+            <Button className="bg-white text-(--mainColor) hover:bg-(--mainColor) hover:text-white  duration-300">
             Sign Up
+            </Button>
           </Link>
         </div>
       </nav>
