@@ -16,10 +16,15 @@ const routes = createBrowserRouter([
   //       path: "test",
   //       element: <PasswordChangedSucceful/>
   //     },
+ 
   {
     path: "/",
     element: <AppLayout />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "/SignUp",
         element: <SignUp />,
@@ -27,10 +32,6 @@ const routes = createBrowserRouter([
       {
         path: "/Login",
         element: <Login />,
-      },
-      {
-        path: "/",
-        element: <Home />,
       },
       {
         path: "Books",
